@@ -1,8 +1,9 @@
-<!-- <csr-advanced-toolbar
-  (toolbarEvent)="toolbarOperation($event)"
-></csr-advanced-toolbar> -->
-
 <div class="container">
+  <tips-advance-toolbar
+    [startConfigs]="startConfigs"
+    [startConfigs]="endConfigs"
+    (toolbarEvent)="toolbarOperation($event)"
+  ></tips-advance-toolbar>
   <fieldset class="FieldSetGlobalStyle">
     <form [formGroup]="searchForm">
       <formly-form

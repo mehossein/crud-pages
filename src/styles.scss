@@ -1,132 +1,45 @@
 @import url("./assets/formly.scss");
+@import url("./assets/css/style.css");
 
-p,
-a,
-q,
-s,
-b,
-u,
-i,
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
 h2,
-em,
 h3,
 h4,
-tt,
 h5,
 h6,
-h1,
-dl,
-dt,
-dd,
+p,
 ol,
-ul,
-li,
-tr,
-th,
-td,
-pre,
-img,
-ins,
-kbd,
-div,
-big,
-sub,
-sup,
-del,
-var,
-dfn,
-nav,
-code,
-span,
-html,
-form,
-samp,
-abbr,
-body,
-menu,
-cite,
-ruby,
-time,
-mark,
-table,
-aside,
-embed,
-tbody,
-tfoot,
-thead,
-small,
-label,
-audio,
-canvas,
-object,
-figure,
-footer,
-header,
-hgroup,
-applet,
-center,
-output,
-iframe,
-strike,
-legend,
-strong,
-address,
-acronym,
-section,
-summary,
-details,
-caption,
-article,
-fieldset,
-blockquote,
-figcaption,
-video {
+ul {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  font-weight: normal;
 }
-/* HTML5 display-role reset for older browsers */
-nav,
-menu,
-aside,
-header,
-hgroup,
-figure,
-footer,
-details,
-article,
-figcaption,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
+
 ol,
 ul {
   list-style: none;
 }
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 #TipsMatTableGlobalStyle {
   border: 1px solid #e7e7e7;
+  margin: 10px 0;
 }
 
 .FieldSetGlobalStyle {
@@ -175,3 +88,44 @@ table {
     z-index: -1;
   }
 }
+
+//   {   inputs style
+::ng-deep {
+  .mat-form-field-flex > .mat-form-field-infix {
+    padding: 0.4em 0px !important;
+    height: 46px;
+  }
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+  top: -1.5em;
+}
+
+::ng-deep {
+  .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+    .mat-form-field-label {
+    transform: translateY(-1.1em) scale(0.75);
+    width: 133.33333%;
+  }
+}
+
+::ng-deep .mat-form-field-infix {
+  .mat-icon {
+    top: 5px !important;
+  }
+}
+
+::ng-deep .mat-form-field-suffix {
+  .mat-icon {
+    top: 0px !important;
+  }
+}
+
+::ng-deep {
+  .mat-footer-row,
+  .mat-row {
+    height: 40px;
+  }
+}
+
+//  inputs style     }

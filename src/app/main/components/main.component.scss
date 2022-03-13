@@ -1,4 +1,8 @@
 .container {
-  max-width: 80%;
-  margin: 100px auto;
+  max-width: 90%;
+  margin: 50px auto;
+}
+
+::ng-deep #toolbar-container {
+  padding: 0px !important;
 }

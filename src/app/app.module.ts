@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
+import { MainModule } from './main/main.module';
 import { SharedModule } from './shared/shared.module';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormlyMaterialModule } from '@ngx-formly/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MainModule } from './main/main.module';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -15,10 +16,10 @@ import { MainModule } from './main/main.module';
     SharedModule,
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormlyMaterialModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
