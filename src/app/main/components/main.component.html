@@ -1,0 +1,31 @@
+<!-- <csr-advanced-toolbar
+  (toolbarEvent)="toolbarOperation($event)"
+></csr-advanced-toolbar> -->
+
+<div class="container">
+  <fieldset class="FieldSetGlobalStyle">
+    <form [formGroup]="searchForm">
+      <formly-form
+        [form]="searchForm"
+        [model]="searchFormModel"
+        [fields]="searchFormConfig"
+        [options]="searchFormOptions"
+      >
+      </formly-form>
+    </form>
+  </fieldset>
+  <tips-mat-table
+    #table
+    id="TipsMatTableGlobalStyle"
+    [ngStyle]="{ height: tableHeight }"
+    [columns]="this.columns"
+    [dataSource]="dataSource$"
+    [pending]="pending"
+    [tableSetting]="tableSetting"
+    [rowActionMenuItems]="actionMenuItems"
+    [rowContextMenuItems]="actionMenuItems"
+    [pagination]="pagination"
+    (onTableEvent)="tableEvent($event)"
+  >
+  </tips-mat-table>
+</div>
